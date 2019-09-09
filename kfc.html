@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KFC ORDER</title>
+
+      <style>
+      	   tr{
+                 background-color:green;
+                 color: black;
+                 text-align: center;
+      	   }
+      	   td{
+      	   	    background-color:green;
+                 color: black;
+                 text-align: center;
+      	
+      	   }
+      </style>
+	<script>
+		    function OrderClick(){
+		                           document.getElementById("summery").style.display="block";
+		                           document.getElementById("tblOrder").style.display="none";
+
+		                           var txtName=document.getElementById('txtName').value;
+		                           var optBurger=document.getElementById('optBurger');
+		                           var optRoller=document.getElementById('optRoller');
+		                           var optfries=document.getElementById('optfries');
+		                           var optKrusher=document.getElementById('optKrusher');
+
+
+		                           var mcost,acost,mname,aname="";
+		                            if (optBurger.checked) {
+		                            	                    mcost=120;
+		                                                    mname=optBurger.value;
+		                                                    }
+                                     if (optRoller.checked) {
+                                     	                       mcost=100;
+                                     	                       mname=optRoller.value;
+                                     	                   }
+                                    if (optfries.checked){
+                                                            acost=60;
+                                                            mcost=mcost+acost;
+                                                            aname+=optfries.value+"<br>";
+                                                          }
+                                     if (optKrusher.checked){
+                                                              acost=40
+                                                              mcost=mcost+acost;
+                                                              aname+=optKrusher.value+"<br>";
+                                                             }
+
+                                     document.getElementById("lblName").innerHTML=txtName;
+                                     document.getElementById("lblMeal").innerHTML=mname;
+                                     document.getElementById("lblAdon").innerHTML=aname;
+                                     document.getElementById("lblTotal").innerHTML="&#8377;"+mcost;
+
+                                 }
+
+	</script>
+</head>
+
+                               
+<body>
+      <div>
+      	<font size="4">
+      		<table width="600" border="2" cellspacing="4" cellpadding="4" align="center" id="tblOrder">
+      			<tr>
+      				<td colspan="2"><img src="images/kfc.png" width="100" height="100" align="center"></td>
+      			</tr>
+      			<tr>
+      				<td>Customer Name</td>
+      				<td><input type="text" id="txtName"></td>
+      			</tr>
+      			<tr>
+      				<td colspan="2">Select Your Meal</td>
+ 
+      			</tr>
+      			<tr>
+      				<td><img src="images/omg1.jpg" width="100" height="100" align="center"><br><input type="radio" id="optBurger" value="OMG Burger" name="Meal">OMG Burger(&#8377;120)</td>
+      				<td><img src="images/omg2.jpg" width="100" height="100" align="center"><br><input type="radio" id="optRoller" value="OMG Roller" name="Meal">OMG Roller(&#8377;100)</td>
+      			</tr>
+      			<tr>
+      			<td colspan="2">Select Ad-ON</td>
+                </tr>
+                <tr>
+                	<td><img src="images/fries.jpeg" width="100" height="100" align="center"><br><input type="checkbox" id="optfries" value="Large Feies">Large Fries(&#8377;60)</td>
+                	<td><img src="images/krusher.jpg" width="100" height="100" align="center"><br><input type="checkbox" id="optKrusher" value="Krusher Brownie">Krusher Brownie(&#8377;50)</td>
+                </tr>
+                <tr>
+                	<td colspan="2">
+                		<input type="button" value="Place Order" onclick="OrderClick()">
+                	</td>
+                </tr>
+      		</table>
+      		<br>
+      		<fieldset id="summery" style="display:none">
+      			<legend>Order Summery</legend>
+      			<dl>
+      				<dt>Customer Name</dt>
+      				<dd id="lblName"></dt>
+      				<dt>Selected Meal</dt>
+      				<dd id="lblMeal"></dd>
+      				<dt>Selected Ad-ONs</dt>
+      				<dd id="lblAdon"></dd>
+      				<dt>Total Amount</dt>
+      				<dd id="lblTotal"></dd>
+      			</dl>
+      			<div align="center">
+      				<a href="kfc.html">Change Order</a>
+      			</div>
+      		</fieldset>
+
+      </div>
+</body>
+</html>
