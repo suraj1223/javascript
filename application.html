@@ -1,0 +1,612 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+        <title> passport input</title>
+
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css?family=josefin+Sans" rel="stylesheet">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://cdnj8s.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+        <style>
+              h2,h3{
+                color: blue;
+              }
+        table{
+              text-align: center;
+             }
+        </style>
+
+                         <script>
+                                   
+                                   function RegisterClick()
+                                                {
+                                                  document.getElementById("setDetails").style.display="block";
+
+                                                  document.getElementById("setRegister").style.display="none";
+
+                                                  App=document.getElementById("App").value;
+                                                  Apply=document.getElementById("Apply").value;
+                                                  TxtMfd=document.getElementById("TxtMfd").value;
+                                                  Input=document.getElementById("Input").value;
+                                                  Book=document.getElementById("Book").value;
+                                                  Applicant=document.getElementById("Applicant").value;
+                                                  optYes=document.getElementById('OptYes').value;
+                                                  optNo=document.getElementById('OptNo').value;
+                                                  Marry=document.getElementById("Marry").value;
+                                                  Place=document.getElementById("Place").value;
+                                                  Dist=document.getElementById("Dist").value;
+                                                  State=document.getElementById("State").value;
+                                                  Country=document.getElementById("Country").value;
+                                                  Gend=document.getElementById("Gend").value;
+                                                  Pan=document.getElementById("Pan").value;
+                                                  Employee=document.getElementById("Employee").value;
+                                                  Spouse=document.getElementById("Spouse").value;
+                                                  Edu=document.getElementById("Edu").value;
+                                                  Category=document.getElementById("Category").value;
+                                                  Aadhar=document.getElementById("Aadhar").value;
+                                                  Father=document.getElementById("Father").value;
+                                                  Mother=document.getElementById("Mother").value;
+                                                  Add=document.getElementById("Add").value;
+                                                  Mob=document.getElementById("Mob").value;
+                                                  Mail=document.getElementById("Mail").value;
+                                                  Place=document.getElementById("Place").value;
+
+
+                                                  if (optYes.checked)
+                                                               stock=optYes.value;
+                                                  if (optNo.checked)
+                                                               stock=optNo.value;
+
+
+                                                  if(optYes.Checked)
+                                                                check=optYes.value;
+                                                  if(optNo.checked)
+                                                                check=optNo.value;
+
+
+                                                  document.getElementById("lblApp").innerHTML=App;
+                                                  document.getElementById("lblApply").innerHTML=Apply;
+                                                  document.getElementById("lblMfd").innerHTML=TxtMfd;
+                                                  document.getElementById("lblInput").innerHTML=Input;
+                                                  document.getElementById("lblBook").innerHTML=Book;
+                                                  document.getElementById("lblApplicant").innerHTML=Applicant;
+                                                  document.getElementById('OptYes').innerHTML;
+                                                  document.getElementById('OptNo').innerHTML;
+                                                  document.getElementById("lblMarry").innerHTML=Marry;
+                                                  document.getElementById("lblPlace").innerHTML=Place;
+                                                  document.getElementById("lblDist").innerHTML=Dist;
+                                                  document.getElementById("lblState").innerHTML=State;
+                                                  document.getElementById("lblCountry").innerHTML=Country;
+                                                  document.getElementById("lblGend").innerHTML=Gend;
+                                                  document.getElementById("lblPan").innerHTML=Pan;
+                                                  document.getElementById("lblEmployee").innerHTML=Employee;
+                                                  document.getElementById("lblSpouse").innerHTML=Spouse;
+                                                  document.getElementById("lblEdu").innerHTML=Edu;
+                                                  document.getElementById("lblCategory").innerHTML=Category;
+                                                  document.getElementById("lblAadhar").innerHTML=Aadhar;
+                                                  document.getElementById("lblFather").innerHTML=Father;
+                                                  document.getElementById("lblMother").innerHTML=Mother;
+                                                  document.getElementById("lblAdd").innerHTML=Add;
+                                                  document.getElementById("lblMob").innerHTML=Mob;
+                                                  document.getElementById("lblMail").innerHTML=Mail;
+                                                  document.getElementById("lblPlace").innerHTML=Place;
+                                                  document.getElementById("lblMfd").innerHTML=TxtMfd;
+                                          }
+
+                         </script>
+                        </head>
+
+
+        <body>
+
+    <table width="1000" border="2" cellspacing="4" cellpadding="4"  id="setRegister">
+    <div>
+      <tr>
+       	<th colspan="2"><h2>
+       	 	PASSPORT APPLICATION FORM <br>
+       	 	Government of INDIA, Ministry of External Affair
+       </h2>
+     </th> 
+       </tr>
+   </div>
+   <div>
+  
+    <tr>
+      <th colspan="2"><h2>Register Application<h2></th>
+    </tr>
+   	
+    <tr>
+      <th colspan="2"><h3> Service Required</h3>
+      </th>
+      </tr>          
+      	
+           
+          
+        <tr>
+     		    <th>Application ID</th>
+     		    <td><input type="text" id="App"></td>
+     	</tr>
+     	
+     
+        <tr>
+     		   <th>Applying For</th>
+     		   <td><input type="text" id="Apply"></td>
+        </tr>
+    
+        <tr>
+     		   <th>Type of application</th>
+     		   <td><input type="text" id="Input"></td>
+        </tr>
+
+        <tr>
+     		   <th>type of passport booklet</th>
+     		   <td><input type="text" id="Book"></td>
+        </tr>
+     	
+     		<tr>
+     			<th colspan="2"><h3>Applicant details</h3></th>
+     		</tr>
+
+     	<tr>
+     		<th>Applicant name</th>
+     		<td><input type="text" id="Applicant"></td>
+      </tr>
+     	
+     	<tr>
+     		<th>Date of birth</th>
+     		<td><input type="Date" id="TxtMfd"></td>
+       </tr>
+      
+      <tr>
+     		<th>Validity Required</th>
+     		<td><input type="radio" name="stock" id="OptYes">Yes
+            <input type="radio" name="stock" id="OptNo">No</td>
+        </tr>
+     	
+        <tr>
+     		<th>Place of Birth(village/town/city)</th>
+     		<td><input type="text" id="Place"></td>
+      </tr>
+        
+     	
+     	<tr>
+     		<th>District</th>
+     		<td><input type="text" id="Dist"></td>
+     	</tr>
+
+     <tr>
+     		<th>state(UT)</th>
+     		<td><input type="text" id="State"></td>
+      </tr>
+     	
+     <tr>
+     		<th>Country</th>
+     		<td><input type="text" id="Country"></td>
+      </tr>
+     	
+      <tr>
+     		<th>Gender</th>
+     		<td><input type="radio" name="Male" value="Male" id="Gend">Male
+            <input type="radio" name="Male" value="Female" id="Gend">Female</td>
+      </tr>
+    
+       <tr>
+     		<th>maritial status</th>
+     		<td><input type="radio" name="Married" value="Married" id="Marry">Married
+            <input type="radio" name="Married" value="UnMarried" id="Marry">UnMarried
+        </td>
+      </tr>
+     	
+     	<tr>
+     		<th>citizzen of india </th>
+     		<td><input type="radio" name="check" id="OptYes">Yes
+            <input type="radio" name="check" id="OptNo">No</td>
+        </tr>
+     	
+       <tr>
+     		<th>Pan</th>
+     		<td><input type="text" id="Pan"></td>
+     	</tr>
+
+     <tr>
+     		<th>Enployment Type</th>
+     		<td><input type="text" id="Employee"></td>
+      </tr>
+     	
+              
+     	<tr>
+     		<th>Is either of your parent (in case of minor)/spouse, a government servant?</th>
+     		<td><input type="radio" name="spouse" value="Yes" id="Spouse">Yes
+            <input type="radio" name="spouse" value="No" id="Spouse">No
+     		</td>
+      </tr>
+     	
+        <tr>
+     		<th>Educational Qualification</th>
+     		<td><input type="text" id="Edu"></td>
+      </tr>
+     	
+       <tr>
+     		<th>Are you eligible for Non-ECR category?</th>
+     		<td> <input type="radio" name="catagory" value="Yes" id="Category">Yes
+             <input type="radio" name="catagory" value="No" id="Category">No
+     		</td>
+      </tr>
+     	
+      <tr>
+     		<th>Aadhar NO:</th>
+     		<td> <input type="text" id="Aadhar"></td>
+     	</tr>
+
+    <tr>
+ 		<th colspan="2"><h3>Family Details</h3></th>
+  </tr>
+ 		
+      <tr>
+     		<th>Father Name</th>
+     		<td><input type="text" id="Father"></td>
+      </tr>
+     	
+      <tr>
+     		<th>Mother Name</tt>
+     		<td> <input type="text" id="Mother"></td>
+      </th>
+     	
+    <tr>
+ 		 <th colspan="2"><h3>Present Residential Address Details</h3></th>
+ 		</tr>
+
+    <tr>
+     		<th>Address</th>
+     		<td><input type="text" id="Add"></td>
+      </tr>
+     	
+     	<tr>
+     		<th>Pin</th>
+     		<td> <input type="text" id="Pin"></td>
+      </tr>
+     	
+     	<tr>
+     		<th>Mob no:</th>
+     		<td> <input type="text" id="Mob"></td>
+     	</tr>
+     	 
+       <tr>
+     		<th>E-Mail</th>
+     		<td><input type="text" id="Mail"></td>
+      </tr>
+     	
+    
+       <tr>
+       		<th colspan="2"> <h3>Permanent Residential Address</h3></th>
+        </tr>
+        
+      <tr>
+     		<th>Address</th>
+     		<td> <input type="text" id="Add"></td>
+      </tr>
+     	
+       	<tr>
+     		<th>Pin</th>
+     		<td> <input type="text" id="Pin"></td>
+      </tr>
+     	
+     	<tr>
+     		<th>Mob No:</th>
+     		<td> <input type="text" id="Mob"></td>
+      </tr>
+     	
+      <tr>
+       	<th colspan="2"><h3>Emergency Contact Details</h3></th>
+        </tr>
+       	 
+        <tr>
+     		<th>Name And Address</th>
+     		<td><input type="text" id="Add"></td>
+      </tr>
+     	
+     	<tr>
+     		<th>Mob No:</th>
+     		<td><input type="text" id="Mob"></td>
+      </tr>
+     	
+     	<tr>
+     		<th>EMAIL</th>
+     		<td><input type=text id="Mail"></td>
+      </tr>
+     	
+     	            <tr>
+                    <h3><th colspan="2">Other Details</th></h3>
+                  </tr>
+       	
+       	<tr>
+       		<th colspan="2"><h3>Enclosures</h3></th>
+        </tr>
+       	
+           		<tr>
+           			<td colspan="2"><h4>
+           			1.Birth Certificate issued by the Registrar of Births and Deaths or the Municipal Corporation or any other prescribed authority,whosoever has been empowered under the Registration of Birth and Deaths Act, 1969 to register the birth of a child born in India
+           			<h4></td>
+              </tr>
+              
+               <tr>
+               	<td colspan="2"><h4>
+               	    2.Aadhaar Card/e-Aadhar containing the 12 digit Aadhaar number issued by the Unique Identification Authority of India(UIDAI)
+               	</h4></td>
+               </tr>
+
+               
+           	
+               		<tr>
+               		<th colspan="2"><h3>Self Declaration</h3></th>
+                </tr>
+               	
+               <tr>
+               		<td colspan="2"><h4>
+               			<input type="checkbox">  I owe allegiance to the sovereignty, unity and integrity of India, and have not voluntarily acquired citizenship or travel document of any other	country. I have not lost, surrendered or been deprived of the citizenship of India and I affirm that the information given by me in	this form and the enclosures is true and I am solely responsible for its accuracy, and I am liable to be penalized or prosecuted if found otherwise. I am aware that under the Passports Act, 1967 it is a criminal offence to furnish any false information or to suppress any	material information with a view to obtaining passport or travel document.
+                  </h4></td>
+                  </tr>
+
+               		
+               		<tr>
+               			<th>PLACE</th>
+               			<td><input type="text" id="Place"></td>
+                  </tr>
+
+               	<tr>
+               			<th>DATE</th>
+               			<td><input type="Date" id="TxtMfd"></td>
+                  </tr>
+
+
+              <div><tr><th colspan="2"> <input type="button" value="Register" onclick="RegisterClick()"></th></tr></div>
+            </div>
+            </table>
+
+
+
+          <br>
+         <table width="800" rules="all" frame="box" id="setDetails" style="display: none">
+         
+        <tr><th colspan="2"><h2>
+          PASSPORT APPLICATION FORM <br>
+          Government of INDIA, Ministry of External Affair
+        </h2></th></tr>
+
+        
+
+     <tr><th colspan="2"><h2>Service Required</h2></th></tr>
+      <tr><th colspan="2"><h3>Register Application</h3></th></tr>
+      <tr><th colspan="2"><h3>Service Required</h3></th></tr>
+       <tr>
+         <th>Application Id</th> 
+         <td id="lblApp"></td>
+       </tr>
+
+      <tr>
+        <th>Applying For</th>
+        <td id="lblApply"></td>
+      </tr>
+    
+      <tr>
+        <th>Type of application</th>
+        <td id="lblInput"></td>
+      </tr>
+        
+        <tr>
+        <th>type of passport booklet</th>
+        <td id="lblBook"></td>
+        </tr>
+        
+        <tr><th colspan="2"><h3>Applicant Details</h3></th></tr>
+
+
+        <tr>
+        <th>Applicant name</th>
+        <td id="lblApplicant"></td>
+        </tr>
+      
+        <tr>
+        <th>Date of birth</th>
+        <td id="lblMfd"></td>
+        </tr>
+        
+        <tr>
+        <th>Validity Required</th>
+        <td id="lblOpt"></td>
+        </tr>
+        
+        <tr>
+        <th>Place of Birth(village/town/city)</th>
+        <td id="lblPlace"></td>
+        </tr>
+      
+        <tr>
+        <th>District</th>
+        <td id="lblDist"></td>
+        </tr>
+        
+        <tr>
+        <th>state(UT)</th>
+        <td id="lblState"></td>
+        </tr>
+        
+        <tr>
+        <th>Country</th>
+        <td id="lblCountry"></td>
+        </tr>
+        
+        <tr>
+        <th>Gender</th>
+        <td id="lblGend"></td>
+        </tr>
+        
+        <tr>
+        <th>maritial status</th>
+        <td id="lblMarry"></td>
+        </tr>
+        
+        <tr>
+        <th>citizzen of india by</th>
+        <td id="lblName"></td>
+        </tr>
+        
+        <tr>
+        <th>Pan</th>
+        <td id="lblPan"></td>
+        </tr>
+
+        <tr>
+        <th>Enployment Type</th>
+        <td id="lblEmployee"></td>
+        </tr>
+              
+        <tr>
+        <th>Is either of your parent (in case of minor)/spouse, a government servant?</th>
+        <td id="lblSpouse"></td>
+        </tr>
+        
+        <tr>
+        <th>Educational Qualification</th>
+        <td id="lblEdu"></td>
+        </tr>
+        
+        <tr>
+        <th>Are you eligible for Non-ECR category?</th>
+        <td id="lblCategory"></td>
+        </tr>
+
+        <tr>
+        <th>Aadhar NO.</th>
+        <td id="lblAadhar"></td>
+        </tr>
+
+        <tr><th colspan="2"><h3>Family Details</h3></th></tr>
+
+        <tr>
+        <th>Father Name</th>
+        <td id="lblFather"></td>
+        </tr>
+        
+        <tr>
+        <th>Mother Name</th>
+        <td id="lblMother"></td>
+        </tr>
+
+        <tr><th colspan="2"><h3>Preesent Residential Address Details</h3></th></tr>
+
+        <tr>
+        <th>Address</th>
+        <td id="lblAdd"></td>
+        </tr>
+       
+       <tr>
+        <th>Pin</th>
+        <td id="lblPin"></td>
+        </tr>
+        
+        <tr>
+        <th>Mob no.</th>
+        <td id="lblMob"></td>
+        </tr>
+        
+        <tr>
+        <th>E-Mail</th>
+        <td id="lblMail"></td>
+       </tr>
+    
+        
+        <tr><th colspan="2"><h3>Permanent Residential Address</h3></th></tr>
+
+
+       <tr>
+        <th>Address</th>
+        <td id="lblAdd"></td>
+        </tr>
+        
+        <tr>
+        <th>Pin</th>
+        <td id="lblPin"></td>
+        </tr>
+        
+        <tr>
+        <th>Mob No.</th>
+        <td id="lblMob"></td>
+        </tr>
+
+         <tr><th colspan="2"><h3>Emergency Contact Details</h3></th></tr>
+
+        <tr>
+        <th>Name And Address</th>
+        <td id="lblAdd"></td>
+        </tr>
+        
+        <tr>
+        <th>Mob No.</th>
+        <td id="lblMob"></td>
+        </tr>
+      
+        <tr>
+        <th>EMAIL</th>
+        <td id="Mail"></td>
+        </tr>
+      
+      
+      <tr><th colspan="2"><h3>Other Details</h3></th></tr>
+        
+
+          <tr><th colspan="2"><h3>Enclosures</h3></th></tr>
+              
+              <tr>
+                <th>
+                1.Birth Certificate issued by the Registrar of Births and Deaths or the Municipal Corporation or any other prescribed authority,whosoever has been empowered under the Registration of Birth and Deaths Act, 1969 to register the birth of a child born in India
+                </th>
+               </tr>
+               
+               <tr>
+                <th>
+                    2.Aadhaar Card/e-Aadhar containing the 12 digit Aadhaar number issued by the Unique Identification Authority of India(UIDAI)
+                </th>
+               </tr>
+               
+            
+                <tr><th colspan="2"><h3>Self Declaration</h3></th><tr>
+                    
+                
+                 <tr>
+                  <th>
+                    I owe allegiance to the sovereignty, unity and integrity of India, and have not voluntarily acquired citizenship or travel document of any other  country. I have not lost, surrendered or been deprived of the citizenship of India and I affirm that the information given by me in this form and the enclosures is true and I am solely responsible for its accuracy, and I am liable to be penalized or prosecuted if found otherwise. I am aware that under the Passports Act, 1967 it is a criminal offence to furnish any false information or to suppress any material information with a view to obtaining passport or travel document.
+                  </th>
+                  </tr>
+                   
+                   <tr>
+                    <th>PLACE</th>
+                    <td id="lblPlace"></td>
+                    </tr>
+                
+                    <tr>
+                    <th>DATE</th>
+                    <td id="lblMfd"></td>
+                    </tr>
+              
+              <tr><th colspan="2"><div align="center"><a href="10.html">Update Form</a></div></th></tr>
+              
+              <tr>
+              <th colspan="2">
+              <div align="center">
+              <input type="button" value="print" onclick="window.print()">
+              <input type="button" value="close" onclick="window.print()">
+              </div>
+              </th>
+              </tr>        
+        </table>
+          </body>
+</html>
