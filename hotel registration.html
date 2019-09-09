@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotel Registration Form</title>
+
+
+	<script>
+		
+		function RegisterClick(){
+                                   document.getElementById("summary").style.display="block";
+                                   document.getElementById("tblRegister").style.display="none";
+
+                                    txtName=document.getElementById("txtName").value;
+                                    txtNum=document.getElementById("txtNum").value;
+                                    txtNum1=document.getElementById("txtNum1").value;
+                                    txtPrice=document.getElementById("txtPrice").value;
+                                    txtTime=document.getElementById("txtTime").value;
+                                    txtProof=document.getElementById("txtProof").value;
+                                    txtDay=document.getElementById("txtDay").value;
+                                    txtMfd=document.getElementById("txtMfd").value;
+                                    txtNumber=document.getElementById("txtNumber").value;
+                                   var optSuite=document.getElementById("optSuite");
+                                    var optDeluxe=document.getElementById("optDeluxe");
+                                    var optAc=document.getElementById("optAc");
+                                   var optLocker=document.getElementById("optLocker");
+
+                               
+                              var ccost,fcost,cname,fname="";
+		                            if (optSuite.checked) {
+		                            	                    ccost=4000;
+		                                                    cname=optSuite.value;
+		                                                    }
+                                     if (optDeluxe.checked) {
+                                     	                       ccost=2000;
+                                     	                       cname=optDeluxe.value;
+                                     	                   }
+                                    if (optAc.checked){
+                                                            fcost=500;
+                                                            fcost=fcost+ccost;
+                                                            fname+=optAc.value+"<br>";
+                                                          }
+                                     if (optLocker.checked){
+                                                              fcost=400
+                                                              fcost=fcost+ccost;
+                                                              fname+=optLocker.value+"<br>";
+                                                             }
+
+
+
+
+
+                                   document.getElementById("lblName").innerHTML=txtName;
+                                    document.getElementById("lblNum").innerHTML=txtNum;
+                                    document.getElementById("lblNum1").innerHTML=txtNum1;
+
+                                   document.getElementById("lblProof").innerHTML=txtProof;
+                                   document.getElementById("lblDate").innerHTML=txtMfd;
+                                   document.getElementById("lblNumber").innerHTML=txtNumber;
+                                   document.getElementById("lblDay").innerHTML=txtDay;
+
+                                    document.getElementById("lblPrice").innerHTML=txtPrice;
+                                    document.getElementById("lblEminities").innerHTML=fname;
+                                    document.getElementById("lblRoom").innerHTML=cname;
+                                    document.getElementById("lblTime").innerHTML=txtTime;
+                                    document.getElementById("lblTotal").innerHTML="&#8377;"+fcost;
+
+''		                         }
+	</script>
+</head>
+<body>
+	<div>
+      <table width="600" border="2" cellpadding="4" cellspacing="4" align="center" id="tblRegister">
+
+      	<tr>
+      		<th colspan="2"><img src="images/OYO.jpg" width="100" height="100"><br>
+      		OYO ROOMS<br>comfort free strategy</th>
+
+      	</tr>
+      	
+      	<tr>
+      		<th colspan="2" align="center">Hotel Registration Form</th>
+      	</tr>
+      	<tr>
+      		<th colspan="2" align="center">Customer Information</th>
+      	</tr>
+      	<tr>
+      		<td>Customer Name</td>
+      		<td><input type="text" id="txtName"></td>
+      	</tr>
+      	<tr>
+      		<td>Members Quantity</td>
+      		<td><input type="text" id="txtNum"></td>
+      	</tr>
+      	<tr>
+      		<td>Nymber of rooms</td>
+      		<td><input type="text" id="txtNum1"></td>
+      	</tr>
+      	<tr>
+      		<td>Customer id Proof</td>
+              				<td><select id="txtProof">
+              					<option value="Aadhar card">Aadhar Card</option>
+              					<option value="Pan Card">Pan Card</option>
+              					<option value="Voting Card">Voting Card</option>
+              					<option value="Driving License">Driving License</option>
+              				</select></td>
+
+      	</tr>
+      	<tr>
+      		<td>Check In Date</td>
+      		<td><input type="Date" id="txtMfd"></td>
+      	</tr>
+      	<tr>
+      		<td>Check In Time</td>
+      		<td><input type="Time" id="txtTime"></ins></td>
+      	</tr>
+      	<tr>
+      	     <td>Total Number Of Person</td>
+      	     <td><input type="Number" id="txtNumber" min="1" max="2"></td>
+      	</tr>
+      	<tr>
+      		<td>Total Number Of Days</td>
+      		<td><input type="Number" id="txtDay" min="1" max="30"></td>
+      	</tr>
+      	<tr>
+      		<th colspan="2" align="center">Room Type</th>
+      	</tr>
+      	<tr>
+      		<td><img src="images/deluxe.jpg" width="200" height="100">
+             <br>
+                 <input type="radio" name="click"  value="Deluxe Room" id="optDeluxe">Deluxe Room(&#8377 2000/day)
+      		</td>
+      		<td><img src="images/suite.jpg" width="200" height="100">
+             <br>
+                 <input type="radio" name="click" value="Suite Room" id="optSuite">Suite Room(&#8377 4000/day)
+      		</td>
+      	</tr>
+      	<tr>
+      		<th colspan="2"> Eminities</th>
+      	</tr>
+      	<tr>
+      		<td><img src="images/locker.png" width="200" height="100">
+             <br>
+                 <input type="checkbox" name="features" value="Locker" id="optLocker">Locker(&#8377 400/day)
+      		</td>
+      		<td><img src="images/ac.jpg" width="200" height="100">
+             <br>
+                 <input type="checkbox" name="features" value="AC" id="optAc">AC(&#8377 500/day)
+      		</td>
+      	</tr>
+      	<tr>
+      		<th colspan="2">Pay Advance</th>
+      	</tr>
+      	<tr>
+      		<td>Advance Amount</td>
+      		<td><input type="range" min="500" max="1000" id="txtPrice"></td>
+      	</tr>
+      	<tr>
+      		<td colspan="2" align="center">
+      			<input type="button" value="Register" onclick="RegisterClick()">
+      		</td>
+      	</tr>
+
+      </table>
+      <br>
+      	<table width="300" rules="all" align="center" frame="box" id="summary" style="display:none">
+      		<tr><th colspan="2">
+      		<h2>Registration Details</h2></th>
+      	</tr>
+      		   <tr>
+      		 	<th>Customer Name</th>
+      		 	<td id="lblName"></td>
+      		  </tr>
+      		  <tr>
+      		 	<th>Member Quantity</th>
+      		 	<td id="lblNum"></td>
+      		  </tr>
+      		  <tr>
+      		 	<th>Number of rooms</th>
+      		 	<td id="lblNum1"></td>
+      		 </tr>
+      		 <tr>	
+      		 	<th>Customer id Proof</th>
+      		 	<td id="lblProof"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Check in Date</th>
+      		 	<td id="lblDate"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Check In Time</th>
+      		 	<td id="lblTime"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Total No. Of Person</th>
+      		 	<td id="lblNumber"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Total no.Of Days</th>
+      		 	<td id="lblDay"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Room Type</th>
+      		 	<td id="lblRoom"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Eminities Type</th>
+      		 	<td id="lblEminities"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Advance Amount</th>
+      		 	<td id="lblPrice"></td>
+      		 </tr>
+      		 <tr>
+      		 	<th>Total Amount</th>
+      		   <td id="lblTotal"></td>
+      		  </tr>
+      			
+              
+               	<tr><th colspan="2">
+               		 <div align="center">
+      				<a href="hotel registration.html">Update Registration</a>
+      			</div>
+      		</th>
+      		</tr>
+
+      	</table>
+   
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
